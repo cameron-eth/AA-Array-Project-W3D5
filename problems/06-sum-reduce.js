@@ -13,9 +13,13 @@ console.log(sumWithReduce([])); // 0
 */
 
 let sumWithReduce = function(nums) {
-  // Your code here
+  if(nums <= 0 || nums.length === 0){
+    return 0
+  }
+  let sum = nums.reduce((acc, currentV) => acc + currentV )
+  return sum / nums.length;
 };
-
+console.log(sumWithReduce([10, 3, 5, 2]))
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
