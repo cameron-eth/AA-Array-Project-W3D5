@@ -13,7 +13,10 @@ console.log(sumWithReduce([])); // 0
 */
 
 let sumWithReduce = function(nums) {
-  // Your code here
+   if(nums <= 0) {
+    return 0;
+   }
+   
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
