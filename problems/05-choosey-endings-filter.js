@@ -7,6 +7,7 @@ empty array. Solve this using Array's `filter()` method.
 HINT: There are built in JavaScript functions that will help with determining if
 a strings ends a certain way. Go see if you can find it on MDN!
 
+
 Examples:
 
 console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'ly'));
@@ -21,13 +22,25 @@ console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'icity'));
 console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'ily'));
 // [ ]
 
-console.log(chooseyEndings(17, 'ily'));
 // [ ]
 */
 
 let chooseyEndings = function(words, suffix) {
-  // Your code here
+    if(typeof words !== 'object'){
+      return [];
+    }
+ return words.filter(word => word.endsWith(suffix))
+
 };
+console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'icity'));
+console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'nd'));
+console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'ly'));
+console.log(chooseyEndings(17, 'ily'));
+
+
+
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
@@ -35,4 +48,4 @@ try {
   module.exports = chooseyEndings;
 } catch (e) {
   module.exports = null;
-}
+}
