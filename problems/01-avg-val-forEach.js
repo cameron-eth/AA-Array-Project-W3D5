@@ -12,11 +12,18 @@ console.log(avgVal([3, 7, 2, 1, 2])); // 3
 console.log(avgVal([])); // null
 
 */
-
+let arr1 =[3, 7, 2, 1, 2];
 let avgVal = function(arr) {
-    // Your code here
+    let total = 0;
+    arr.forEach(element => {
+      total += element ;
+    },0);
+  if(total <= 0){
+    return null;
+  }
+    return total /arr.length;
 };
-
+console.log(avgVal(arr1));
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
