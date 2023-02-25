@@ -12,7 +12,7 @@ console.log(sumForEach([])); // 0
 */
 
 let sumForEach = function(arr) {
-  // Your code here
+  // Your code here Rodrick
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
